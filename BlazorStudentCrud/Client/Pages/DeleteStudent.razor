@@ -1,0 +1,56 @@
+﻿@page "/deletestudent/{id}"
+@using BlazorStudentCrud.Shared
+
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h3>DeleteStudent</h3>
+<p>Are you sure you want to delete this student:<b> @std.studentName </b></p>
+<br />
+<div class="col-md-4">
+    <table class="table">
+        <tr>
+            <td>Name</td>
+            <td>@std.studentName</td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td>@std.course</td>
+        </tr>
+        <tr>
+            <td>Year</td>
+            <td>@std.year</td>
+        </tr>
+    </table>
+    <div class="form-group">
+        <input type="button" class="btn btn-primary" @onclick="@Delete" value="Delete" />
+        <input type="button" class="btn" @onclick="@Cancel" value="Cancel" />
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    //INT datatype will not directing to another page..if you want o direct another page for update or delete..must specify STRING datatype whaterver it is (int,bool,etc)
+    public String id { get; set; }
+
+    studentInfo std = new studentInfo();
+
+    //to get the id from a particular student from database
+    protected override async Task OnInitializedAsync()
+    {
+        std = await Http.GetJsonAsync<studentInfo>("http://localhost:55366/api/studentinfoes/" + id);
+    }
+
+
+    protected async Task Delete()
+    {
+        //delete from database
+        await Http.DeleteAsync("http://localhost:55366/api/studentinfoes/" + id);
+        NavigationManager.NavigateTo("studentList");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("studentList");
+    }
+}

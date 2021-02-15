@@ -1,0 +1,12 @@
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\bin\Debug\net5.0\BlazorStudentCrud.Shared.deps.json
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\bin\Debug\net5.0\BlazorStudentCrud.Shared.dll
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\bin\Debug\net5.0\ref\BlazorStudentCrud.Shared.dll
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\bin\Debug\net5.0\BlazorStudentCrud.Shared.pdb
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.csprojAssemblyReference.cache
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.AssemblyInfoInputs.cache
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.AssemblyInfo.cs
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.dll
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\ref\BlazorStudentCrud.Shared.dll
+C:\Users\Debojit Paul\source\repos\BlazorStudentCrud\BlazorStudentCrud\Shared\obj\Debug\net5.0\BlazorStudentCrud.Shared.pdb

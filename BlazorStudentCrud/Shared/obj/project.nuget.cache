@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "APT7XveHcO1dLK04O0G5ZW/71/5rf43JvC7i5Z+9iVeuD9uw/y/t4+QjwBQbYCqjxcoZ4y2kS1vkFAqKvjfHWA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Debojit Paul\\OneDrive\\Desktop\\Blazor WebAssembly\\BlazorStudentCrud\\Shared\\BlazorStudentCrud.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.2\\microsoft.aspnetcore.authorization.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.2\\microsoft.aspnetcore.components.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.2\\microsoft.aspnetcore.components.analyzers.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.2\\microsoft.aspnetcore.components.forms.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.2\\microsoft.aspnetcore.components.web.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\3.2.0-preview2.20160.5\\microsoft.aspnetcore.components.webassembly.3.2.0-preview2.20160.5.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.2\\microsoft.aspnetcore.metadata.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.2\\microsoft.extensions.configuration.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.2\\microsoft.extensions.configuration.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.2\\microsoft.extensions.dependencyinjection.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.2\\microsoft.extensions.dependencyinjection.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.2\\microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.options\\3.1.2\\microsoft.extensions.options.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.2\\microsoft.extensions.primitives.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.jsinterop\\3.1.2\\microsoft.jsinterop.3.1.2.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.0-preview2.20160.5\\microsoft.jsinterop.webassembly.3.2.0-preview2.20160.5.nupkg.sha512",
+    "C:\\Users\\Debojit Paul\\.nuget\\packages\\toolbelt.blazor.httpclientinterceptor\\9.2.1\\toolbelt.blazor.httpclientinterceptor.9.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

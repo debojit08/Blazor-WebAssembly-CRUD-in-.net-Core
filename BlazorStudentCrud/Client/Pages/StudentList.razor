@@ -1,0 +1,52 @@
+﻿@page "/studentList"
+@using BlazorStudentCrud.Shared
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+<h3>Student Details</h3>
+<p>
+    <a href="/addStudent">Add new Student</a>
+</p>
+@if (stdList == null)
+{
+    <p>Loading....</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var std in stdList)
+            {
+                <tr>
+                    <td>@std.studentName</td>
+                    <td>@std.course</td>
+                    <td>@std.year</td>
+                    <td>
+                        <a href='/editstudent/@std.stdId'>Edit</a>
+                        <a href='/deletestudent/@std.stdId'>Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    studentInfo[] stdList;
+    protected override async Task OnInitializedAsync()
+    {
+        await loadData();
+    }
+    protected async Task loadData()
+    {
+
+        stdList = await Http.GetJsonAsync<studentInfo[]>("http://localhost:55366/api/studentinfoes");
+    }
+}

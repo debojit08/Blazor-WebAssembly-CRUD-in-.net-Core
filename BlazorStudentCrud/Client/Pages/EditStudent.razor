@@ -1,0 +1,59 @@
+﻿@page "/editstudent/{id}"
+@using BlazorStudentCrud.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+<h3>EditStudent</h3>
+<hr />
+<form>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="studentName" class="control-label">Name</label>
+                <input for="studentName" class="form-control" @bind="@std.studentName" />
+            </div>
+            <div class="form-group">
+                <label for="course" class="control-label">Course</label>
+                <input for="course" class="form-control" @bind="@std.course" />
+            </div>
+            <div class="form-group">
+                <label for="year" class="control-label">Year</label>
+                <input for="year" class="form-control" @bind="@std.year" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@UpdateStudent" value="Update" />
+                <input type="button" class="btn" @onclick="@Cancel" value="Cancel" />
+            </div>
+        </div>
+    </div>
+</form>
+
+@code {
+
+    [Parameter]
+    //INT datatypw will not directing to another page..if you want o direct another page for update or delete..must specify STRING datatype whaterver it is (int,bool,etc)
+    public String id { get; set; }
+
+    studentInfo std = new studentInfo();
+
+    //to get the id from a particular student from database
+    protected override async Task OnInitializedAsync()
+    {
+        std = await Http.GetJsonAsync<studentInfo>("http://localhost:55366/api/studentinfoes/" + id);
+    }
+
+
+    protected async Task UpdateStudent()
+    {
+        //update and send to the database
+        await Http.PutJsonAsync("http://localhost:55366/api/studentinfoes/"+id, std);
+        NavigationManager.NavigateTo("studentList");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("studentList");
+    }
+}
